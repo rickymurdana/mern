@@ -1,0 +1,91 @@
+/* Top bar styles */
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topbar-title {
+  font-size: 24px;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Overlay styles */
+.logout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.logout-overlay-content {
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-message {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.overlay-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirm-button,
+.cancel-button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #4a90e2;
+  color: #ffffff;
+}
+
+.cancel-button {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.confirm-button:hover {
+  background-color: #3b7ac8;
+}
+
+.cancel-button:hover {
+  background-color: #e0e0e0;
+}
