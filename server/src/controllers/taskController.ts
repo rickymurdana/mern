@@ -28,10 +28,10 @@ export const createTask = async (req: Request, res: Response) => {
 
   try {
     const task = new Task({ email, date, description });
-    await task.save();
 
     // Send email using the template
-    // await sendTemplateEmail(email);
+    await sendTemplateEmail(email, description);
+    await task.save();
 
     res.status(201).json({ message: "Task created successfully", task });
   } catch (err) {
